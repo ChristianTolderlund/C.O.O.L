@@ -21,7 +21,6 @@
 
 body {
   font-family: var(--body-font);
-  font-weight: 400;
   color: #111;
   line-height: 1;
 }
@@ -36,3 +35,14 @@ h6 {
   text-transform: uppercase;
 }
 
+.link {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-decoration: underline;
+  border: 0;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  color: inherit;
+}
