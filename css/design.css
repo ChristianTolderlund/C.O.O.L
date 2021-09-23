@@ -18,12 +18,18 @@
   --body-font: "AkkuratPro-reg", sans-serif;
   --bold-body-font: "AkkuratPro-bold", sans-serif;
 }
-
+body,
+html {
+  height: 100%;
+}
 body {
   font-family: var(--body-font);
   font-weight: 400;
   color: #111;
   line-height: 1;
+}
+main {
+  min-height: 100%;
 }
 
 h1,
@@ -36,3 +42,40 @@ h6 {
   text-transform: uppercase;
 }
 
+/*footer styling*/
+footer {
+  padding: 1rem;
+  outline: 3px solid red;
+  min-height: 100;
+}
+
+.h4-footer {
+  text-align: right;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 0px 80px 0px 0px;
+}
+.footer-ul {
+  list-style: none;
+  text-align: right;
+}
+.footer-ul {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-decoration: underline;
+  margin: 0;
+  vertical-align: auto;
+}
+.search-bar {
+  margin-bottom: 10px;
+}
+input {
+  width: 10%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+.enter:focus {
+  outline: none;
+}
