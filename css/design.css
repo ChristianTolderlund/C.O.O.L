@@ -1,0 +1,38 @@
+/*Import local fonts*/
+@font-face {
+  font-family: "Gotham-bold";
+  src: url("../fonts/Gotham-Font/GothamBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AkkuratPro-bold";
+  src: url("../fonts/AkkuratPro/AkkBd_Pro_1.otf") format("truetype");
+}
+@font-face {
+  font-family: "AkkuratPro-reg";
+  src: url("../fonts/AkkuratPro/AkkBd_Pro_1.otf") format("truetype");
+}
+
+:root {
+  --header-font: "Gotham-bold", sans-serif;
+  --body-font: "AkkuratPro-reg", sans-serif;
+  --bold-body-font: "AkkuratPro-bold", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: #111;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+  text-transform: uppercase;
+}
+
