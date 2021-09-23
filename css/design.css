@@ -76,7 +76,7 @@ svg {
 }
 
 .arrow-link a:hover span {
-    text-decoration-color: #d8d8d8;
+  text-decoration-color: #d8d8d8;
   cursor: pointer;
 }
 
@@ -88,4 +88,3 @@ svg {
   width: auto;
   margin-left: 10px;
 }
-
