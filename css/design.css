@@ -44,6 +44,7 @@ h6 {
 
 /*footer styling*/
 footer {
+  background-color: black;
   padding: 1rem;
   outline: 3px solid red;
   min-height: 100;
@@ -53,29 +54,51 @@ footer {
   text-align: right;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  margin: 0px 80px 0px 0px;
+  margin: 0px 7rem 0px 0px;
 }
+
 .footer-ul {
   list-style: none;
   text-align: right;
-}
-.footer-ul {
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-decoration: underline;
   margin: 0;
   vertical-align: auto;
+  margin-right: 2rem;
 }
+.footer-links,
+.museum,
+.channel,
+.webshop {
+  color: white;
+}
+
 .search-bar {
   margin-bottom: 10px;
 }
 input {
-  width: 10%;
+  color: white;
+  background-color: black;
+  width: 12%;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
+  border-color: white;
 }
 .enter:focus {
   outline: none;
+}
+.search-btn {
+  background-color: black;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: white;
+}
+i.fa.fa-search {
+  background-color: black;
+  color: white;
 }
