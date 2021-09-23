@@ -74,8 +74,14 @@ footer {
   color: white;
 }
 
+.museum:hover,
+.channel:hover,
+.webshop:hover {
+  color: beige;
+}
 .search-bar {
   margin-bottom: 10px;
+  border: none;
 }
 input {
   color: white;
@@ -86,6 +92,9 @@ input {
   border-left-style: hidden;
   border-bottom-style: groove;
   border-color: white;
+}
+input[type="text" i] {
+  padding-right: 0%;
 }
 .enter:focus {
   outline: none;
