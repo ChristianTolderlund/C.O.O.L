@@ -46,7 +46,7 @@ h6 {
 footer {
   background-color: black;
   padding: 1rem;
-  outline: 3px solid red;
+  /*outline: 3px solid red;*/
   min-height: 100;
 }
 
