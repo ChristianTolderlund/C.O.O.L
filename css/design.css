@@ -40,20 +40,6 @@ h6 {
 
 /* Header */
 
-header{
-  margin: 3vw 3vw 0 3vw;
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-.hamburgermenu div{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-
 /* Main Grid */
 
 
