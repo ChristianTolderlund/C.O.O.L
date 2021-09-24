@@ -27,6 +27,8 @@ body {
   font-weight: 400;
   color: #111;
   line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 main {
   min-height: 100%;
@@ -164,4 +166,86 @@ i.fa.fa-search {
   i.fa.fa-search {
     font-size: 10px;
   }
+}
+/* Header */
+
+/* Main Grid */
+
+.artistoftheday {
+  width: 100vw;
+  height: 90vh;
+  max-width: 100%;
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.artistoftheday h1 {
+  font-size: 5vw;
+}
+
+.artistoftheday h2 {
+  font-size: 3vw;
+  margin-top: -3vw;
+  margin-left: 42vw;
+}
+
+main p {
+  line-height: 2vw;
+  font-size: 1.5vw;
+}
+
+.text1 {
+  margin: 3vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3vw 3vw 3vw 3vw;
+  row-gap: 4vw;
+}
+
+.box {
+  width: 45vw;
+  height: 30vw;
+  background: lightgrey;
+}
+
+#box2,
+#textbox1 {
+  justify-self: flex-end;
+}
+
+.textbox {
+  display: flex;
+  align-content: flex-end;
+  width: 45vw;
+}
+
+.textbox p {
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.bigimage {
+  margin-top: 5vw;
+  min-height: 80vh;
+  height: 100%;
+  max-width: 97vw;
+  background: lightgrey;
+}
+
+.symbol {
+  font-size: 10vw;
+  margin-left: 19vw;
+  margin-top: 4vw;
+}
+
+blockquote {
+  margin: -3vw 10vw 2vw 20vw;
+  font-size: 2vw;
+  line-height: 3vw;
 }
