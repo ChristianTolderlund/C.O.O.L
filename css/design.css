@@ -38,6 +38,22 @@ h6 {
   text-transform: uppercase;
 }
 
+/* Header */
+
+header{
+  margin: 3vw 3vw 0 3vw;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.hamburgermenu div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
 /* Main Grid */
 
 
@@ -64,8 +80,8 @@ h6 {
 }
 
 main p{
-  line-height: 1.8vw;
-  font-size: 1.2vw;
+  line-height: 2vw;
+  font-size: 1.5vw;
 }
 
 .text1{
@@ -100,4 +116,22 @@ background: lightgrey;
   margin-bottom: 0;
 }
 
+.bigimage{
+  margin-top: 5vw;
+  min-height: 80vh;
+  height: 100%;
+  max-width: 97vw;
+  background: lightgrey;
+}
 
+.symbol{
+  font-size: 10vw;
+  margin-left: 19vw;
+  margin-top: 4vw;
+}
+
+blockquote{
+  margin: -3vw 10vw 2vw 20vw;
+  font-size: 2vw;
+  line-height: 3vw;
+}
