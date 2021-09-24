@@ -24,6 +24,8 @@ body {
   font-weight: 400;
   color: #111;
   line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -35,4 +37,67 @@ h6 {
   font-family: var(--header-font);
   text-transform: uppercase;
 }
+
+/* Main Grid */
+
+
+.artistoftheday{
+  width: 100vw;
+  height: 90vh;
+  max-width: 100%;
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.artistoftheday h1{
+  font-size: 5vw;
+}
+
+.artistoftheday h2{
+  font-size: 3vw;
+  margin-top: -3vw;
+  margin-left: 42vw;
+ 
+}
+
+main p{
+  line-height: 1.8vw;
+  font-size: 1.2vw;
+}
+
+.text1{
+  margin: 3vw;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3vw 3vw 3vw 3vw;
+  row-gap: 4vw;
+}
+
+.box{
+width: 45vw;
+height: 30vw;
+background: lightgrey;
+}
+
+#box2, #textbox1{
+  justify-self: flex-end;
+}
+
+.textbox{
+  display: flex;
+  align-content: flex-end;
+  width: 45vw;
+}
+
+.textbox p{
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
 
