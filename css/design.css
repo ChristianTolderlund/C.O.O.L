@@ -48,20 +48,24 @@ footer {
   padding: 1rem;
   /*outline: 3px solid red;*/
   min-height: 100;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-
+.footer-links {
+  min-width: 100px;
+}
 .h4-footer {
   text-align: right;
-  font-size: 1.125rem;
+  font-size: 25px;
   line-height: 1.75rem;
-  margin: 0px 7rem 0px 0px;
+  margin: 0px 9rem 0px 0px;
 }
 
 .footer-ul {
   list-style: none;
   text-align: right;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 25px;
+  line-height: 3rem;
   text-decoration: underline;
   margin: 0;
   vertical-align: auto;
@@ -72,8 +76,12 @@ footer {
 .channel,
 .webshop {
   color: white;
+  margin-top: 10px;
 }
 
+.channel {
+  margin-right: 5px;
+}
 .museum:hover,
 .channel:hover,
 .webshop:hover {
@@ -81,17 +89,19 @@ footer {
 }
 .search-bar {
   margin-bottom: 10px;
+  margin-top: 135px;
   border: none;
 }
 input {
   color: white;
   background-color: black;
-  width: 12%;
+  width: 50%;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
   border-color: white;
+  font-size: 30px;
 }
 input[type="text" i] {
   padding-right: 0%;
@@ -110,4 +120,48 @@ input[type="text" i] {
 i.fa.fa-search {
   background-color: black;
   color: white;
+}
+.search-btn,
+i.fa.fa-search {
+  font-size: 30px;
+}
+@media (max-width: 640px) {
+  .h4-footer,
+  .footer-ul {
+    font-size: 10px;
+    line-height: 2rem;
+  }
+  .h4-footer {
+    margin-right: 8em;
+  }
+  input {
+    display: none;
+  }
+  .search-bar {
+    margin-top: 110px;
+  }
+  .search-btn,
+  i.fa.fa-search {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .h4-footer,
+  .footer-ul {
+    font-size: 7px;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .h4-footer {
+    margin-right: 9em;
+  }
+  .search-bar {
+    margin-top: 50px;
+  }
+  .search-btn,
+  i.fa.fa-search {
+    font-size: 10px;
+  }
 }
