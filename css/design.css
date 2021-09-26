@@ -36,3 +36,41 @@ h6 {
   text-transform: uppercase;
 }
 
+.archive_body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 5vw;
+  width: auto;
+  height: auto;
+  background-color: #1a1a1a;
+  padding: 5vw;
+}
+
+.archive_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vw;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.filtering_menu {
+  width: 100%;
+  background-color: blueviolet;
+}
+
+.archive_tile {
+  margin: 0;
+  /* width: 350px; */
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.archive_tile_img {
+width: 100%;
+}
+
+.archive_tile_info {
+  padding: 1vw;
+}
