@@ -18,10 +18,13 @@
   --body-font: "AkkuratPro-reg", sans-serif;
   --bold-body-font: "AkkuratPro-bold", sans-serif;
 }
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
 .menu-btn {
-  width: 80px;
-  height: 80px;
-  position: relative;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,20 +32,20 @@
   transition: all 0.5s ease-in-out;
 }
 .menu-burger {
-  width: 6px;
-  height: 50px;
+  width: 4px;
+  height: 40px;
   background-color: black;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.5s ease-in-out;
 }
 .menu-burger::before,
 .menu-burger::after {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 50px;
+  width: 4px;
+  height: 40px;
   background-color: black;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -62,7 +65,40 @@
 .menu-btn.open .menu-burger::after {
   transform: rotate(-45deg) translate(35px, -35px);
 }
-
+#side-nav {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 80%;
+}
+.dropdown {
+  position: relative;
+  margin-top: 15%;
+}
+.drop-list {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  line-height: 1.75rem;
+}
+.drop-list li {
+  display: inline;
+  padding: 1rem;
+  font-size: 30px;
+}
+.drop-list li a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.drop-list li a:hover {
+  background-color: rgb(57, 59, 57);
+}
+.search-bar-nav {
+  margin-left: 32.5%;
+  padding: 2rem;
+}
 body,
 html {
   height: 100%;
