@@ -1,4 +1,23 @@
-const url = "https://kea2021int-f4d0.restdb.io/rest/artworks";
+const urlParams = new URLSearchParams(window.location.search);
+// in the URL grab params and store it's value in id
+
+const artwork_type = urlParams.get("artwork_type");
+const sort_by_year = urlParams.get("sort_by_year");
+
+console.log(artwork_type);
+
+var url = "https://kea2021int-f4d0.restdb.io/rest/artworks";
+
+if (artwork_type) {
+    url = "https://kea2021int-f4d0.restdb.io/rest/artworks?q={%22artwork_type%22:%20%22"+artwork_type+"%22}";
+}
+
+if (sort_by_year) {
+    url = "https://kea2021int-f4d0.restdb.io/rest/artworks?h={%22$orderby%22:%20{%22artwork_date%22:%20-1}}";
+}
+
+console.log(url);
+
 
 // The API-key
 const options = {
@@ -16,7 +35,7 @@ fetch(url, options)
     })
     .then((data) => {
         //We have the data
-        console.log(data);
+        // console.log(data);
         handleData(data);
     })
     .catch((e) => {
@@ -26,7 +45,7 @@ fetch(url, options)
 
 function handleData(data) {
     data.forEach((artworks) => {
-        console.log(artworks);
+        // console.log(artworks);
         // 1. make a template
         // 2. grab it 
         const template = document.querySelector(".archive_template").content;
