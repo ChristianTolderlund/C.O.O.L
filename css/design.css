@@ -18,6 +18,7 @@
   --body-font: "AkkuratPro-reg", sans-serif;
   --bold-body-font: "AkkuratPro-bold", sans-serif;
 }
+/*Nav bar styling*/
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -81,10 +82,11 @@
   text-align: center;
   position: relative;
   line-height: 1.75rem;
+  padding-inline-start: 0;
 }
 .drop-list li {
   display: inline;
-  padding: 1rem;
+  /*padding: 1rem;*/
   font-size: 30px;
 }
 .drop-list li a {
@@ -96,9 +98,37 @@
   background-color: rgb(57, 59, 57);
 }
 .search-bar-nav {
-  margin-left: 32.5%;
+  margin-left: 32%;
   padding: 2rem;
 }
+.enter-nav:focus {
+  outline: none;
+}
+
+@media (max-width: 904px) {
+  .drop-list li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .enter-nav {
+    font-size: 15px;
+  }
+  .search-bar-nav {
+    margin-left: 25%;
+  }
+}
+@media (max-width: 560px) {
+  .drop-list li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .drop-list li {
+    font-size: 10px;
+  }
+}
+
 body,
 html {
   height: 100%;
@@ -217,7 +247,7 @@ i.fa.fa-search {
   .h4-footer {
     margin-right: 8em;
   }
-  input {
+  .enter {
     display: none;
   }
   .search-bar {
@@ -242,10 +272,6 @@ i.fa.fa-search {
   }
   .search-bar {
     margin-top: 50px;
-  }
-  .search-btn,
-  i.fa.fa-search {
-    font-size: 10px;
   }
 }
 /* Header */
