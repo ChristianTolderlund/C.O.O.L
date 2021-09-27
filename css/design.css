@@ -133,6 +133,7 @@ justify-content: space-between;
 
 .explore_image {
   width: 100%;
+  object-fit: cover;
 }
 
 .explore_info {
