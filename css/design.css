@@ -310,10 +310,10 @@ blockquote {
 
 /* Childrens Corner  */
 
-.childrenimage{
+.childrenimage {
   margin-top: -5vw;
   margin-left: -2vw;
-  min-height:50vw;
+  min-height: 50vw;
   height: 100%;
   max-width: 90vw;
   background-image: url(../image/born2.jpg);
@@ -323,15 +323,14 @@ blockquote {
   position: relative;
 }
 
-.children_main h1{
+.children_main h1 {
   position: relative;
   top: 20vw;
   margin-left: 10vw;
   font-size: 10vw;
-
 }
 
-.scroll{
+.scroll {
   width: 25vw;
   height: 25vw;
   background-image: url(../image/scroll.png);
@@ -353,33 +352,87 @@ blockquote {
   }
 }
 
-.othertasks h2{
+.othertasks h2 {
   margin-left: 3vw;
   font-size: 6vw;
   margin-top: 8vw;
 }
 
-
-
-.childrengrid{
+.childrengrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 5vw;
-margin: 3vw;
+  margin: 3vw;
 }
-.task{
-  height: 25vw;
-  width: 25vw;
+.task {
+  height: 440px;
+  width: 440px;
   background-color: black;
   border-radius: 50%;
-  justify-self: center;  
+  justify-self: center;
+  display: grid;
+  transition: transform 0.6s;
 }
 
-.taskoftoday h2{
+.task a {
+  margin: auto;
+  visibility: hidden;
+}
+
+.task:hover {
+  opacity: 0.6;
+  transform: scale(1.03);
+}
+
+.task:hover a {
+  visibility: visible;
+}
+
+.one {
+  background-image: url(../image/ChildrenTask/_KIM0068.jpg);
+  background-position: center;
+}
+
+.two {
+  background-image: url(../image/ChildrenTask/_KIM0220.jpg);
+  background-position: bottom;
+}
+
+.three {
+  background-image: url(../image/ChildrenTask/_KIM1370-Edit.jpg);
+  background-position: center;
+}
+
+.four {
+  background-image: url(../image/ChildrenTask/_KIM6138.jpg);
+  background-position: bottom;
+}
+.five {
+  background-image: url(../image/ChildrenTask/_KIM3857.jpg);
+  background-position: left;
+}
+.six {
+  background-image: url(../image/ChildrenTask/_KIM8638.jpg);
+
+  background-position: bottom;
+}
+.seven {
+  background-image: url(../image/ChildrenTask/_KIM4795.jpg);
+}
+
+.eight {
+  background-image: url(../image/ChildrenTask/_KIM5200.jpg);
+  background-position: bottom;
+}
+
+.nine {
+  background-image: url(../image/ChildrenTask/_KIM5331.jpg);
+  background-position: bottom;
+}
+
+.taskoftoday h2 {
   font-size: 6vw;
 }
-.taskoftoday{
- margin: 3vw;
+.taskoftoday {
+  margin: 3vw;
 }
-
-
