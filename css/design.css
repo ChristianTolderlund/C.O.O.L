@@ -307,3 +307,79 @@ blockquote {
   width: 100%;
   height: 100%;
 }
+
+/* Childrens Corner  */
+
+.childrenimage{
+  margin-top: -5vw;
+  margin-left: -2vw;
+  min-height:50vw;
+  height: 100%;
+  max-width: 90vw;
+  background-image: url(../image/born2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.children_main h1{
+  position: relative;
+  top: 20vw;
+  margin-left: 10vw;
+  font-size: 10vw;
+
+}
+
+.scroll{
+  width: 25vw;
+  height: 25vw;
+  background-image: url(../image/scroll.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 75vw;
+  top: 6vw;
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.othertasks h2{
+  margin-left: 3vw;
+  font-size: 6vw;
+  margin-top: 8vw;
+}
+
+
+
+.childrengrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5vw;
+margin: 3vw;
+}
+.task{
+  height: 25vw;
+  width: 25vw;
+  background-color: black;
+  border-radius: 50%;
+  justify-self: center;  
+}
+
+.taskoftoday h2{
+  font-size: 6vw;
+}
+.taskoftoday{
+ margin: 3vw;
+}
+
+
