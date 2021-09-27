@@ -25,7 +25,6 @@ html {
 }
 body {
   font-family: var(--body-font);
-  font-weight: 400;
   color: #111;
   line-height: 1;
   margin: 0;
@@ -261,7 +260,6 @@ main p {
   min-height: 90vh;
   height: 100%;
   min-width: 80vw;
- 
 }
 
 .bigimage iframe {
@@ -317,4 +315,59 @@ blockquote {
   background-position: center;
   width: 100%;
   height: 100%;
+}
+
+/*Link design*/
+a {
+  border: 0;
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+svg {
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.link {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-decoration: underline;
+  border: 0;
+  color: inherit;
+}
+
+.arrow-link {
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  transform: translateX(-3px);
+}
+
+.arrow-link a {
+  text-decoration: none;
+}
+
+.arrow-link a span {
+  text-decoration: underline;
+  transition: text-decoration-color 0.2s;
+}
+
+.arrow-link a:hover span {
+  text-decoration-color: #d8d8d8;
+  cursor: pointer;
+}
+
+.arrow-link svg {
+  transform: translateY(-2px);
+  pointer-events: none;
+  overflow: hidden;
+  height: 1em;
+  width: auto;
+  margin-left: 10px;
 }
