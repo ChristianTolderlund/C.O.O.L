@@ -249,3 +249,37 @@ blockquote {
   font-size: 2vw;
   line-height: 3vw;
 }
+/*Image slider*/
+
+.slider {
+  /* line them up horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* allow for scrolling */
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+  width: 80%;
+  min-height: 100%;
+  gap: 8vw;
+  padding-left: 20%;
+  /* each slide snaps into place */
+  scroll-snap-type: x mandatory;
+}
+
+.slider > * {
+  cursor: grab;
+  scroll-snap-align: start;
+  width: 60vw;
+  height: 40vw;
+  background-color: rgba(26, 26, 26, 0.15);
+}
+
+.image {
+  background-image: url("https://louisiana.dk/wp-content/uploads/2020/10/20_KMA1303-1280x1333.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
