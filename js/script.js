@@ -38,9 +38,27 @@ function handleData(data) {
         clone.querySelector(".artwork_date").textContent = artworks.artwork_date;
         clone.querySelector(".artwork_description").textContent = artworks.description;
         clone.querySelector(".artwork_type").textContent = artworks.artwork_type;
+        clone.querySelector(".archive_tile_img").src = artworks.images_url[0];
 
         // 5. append it to the DOM
         const parent = document.querySelector(".archive_content");
         parent.appendChild(clone);
     });
+}
+
+//Side menu collapsible
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
