@@ -10,10 +10,8 @@
 }
 @font-face {
   font-family: "AkkuratPro-reg";
-  src: url("../fonts/AkkuratPro/AkkRg_Pro_1.otf") format("truetype");
+  src: url("../fonts/AkkuratPro/AkkBd_Pro_1.otf") format("truetype");
 }
-
-
 
 :root {
   --header-font: "Gotham-bold", sans-serif;
@@ -23,8 +21,6 @@
 body,
 html {
   height: 100%;
-  scroll-behavior: smooth;
-
 }
 body {
   font-family: var(--body-font);
@@ -177,40 +173,32 @@ i.fa.fa-search {
 
 .artistoftheday {
   width: 100vw;
-  min-height: 56vw;
-  background-image: url(../image/Alicja1.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  /* display: flex;
+  height: 90vh;
+  max-width: 100%;
+  background: lightgrey;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center; */
+  text-align: center;
 }
 
 .artistoftheday h1 {
   font-size: 5vw;
-  position: absolute;
-  top: 20vw;
-  left: 15vw;
-  
 }
 
 .artistoftheday h2 {
   font-size: 3vw;
-  position: absolute;
-  top: 26vw;
-  right: 20vw;
+  margin-top: -3vw;
+  margin-left: 42vw;
 }
 
 main p {
   line-height: 2vw;
   font-size: 1.5vw;
-
 }
 
 .text1 {
-  margin: 5vw 3vw 5vw 3vw;
+  margin: 3vw;
 }
 
 .grid {
@@ -220,25 +208,10 @@ main p {
   row-gap: 4vw;
 }
 
-/* .box {
+.box {
   width: 45vw;
   height: 30vw;
-} */
-
-#box2{
-  width: 45vw;
-  height: 30vw;
-  background-image: url(../image/alicja2.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-#box1{
-  width: 45vw;
-  height: 30vw;
-  background-image: url(../image/alicja4.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: lightgrey;
 }
 
 #box2,
