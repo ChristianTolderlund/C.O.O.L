@@ -18,6 +18,117 @@
   --body-font: "AkkuratPro-reg", sans-serif;
   --bold-body-font: "AkkuratPro-bold", sans-serif;
 }
+/*Nav bar styling*/
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-btn {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-burger {
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-burger::before,
+.menu-burger::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-burger::before {
+  transform: translateX(-16px);
+}
+.menu-burger::after {
+  transform: translateX(16px);
+}
+.menu-btn.open .menu-burger {
+  transform: translateY(50px);
+  background: transparent;
+}
+.menu-btn.open .menu-burger::before {
+  transform: rotate(45deg) translate(-35px, -35px);
+}
+.menu-btn.open .menu-burger::after {
+  transform: rotate(-45deg) translate(35px, -35px);
+}
+#side-nav {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 80%;
+}
+.dropdown {
+  position: relative;
+  margin-top: 15%;
+}
+.drop-list {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  line-height: 1.75rem;
+  padding-inline-start: 0;
+}
+.drop-list li {
+  display: inline;
+  /*padding: 1rem;*/
+  font-size: 30px;
+}
+.drop-list li a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.drop-list li a:hover {
+  background-color: rgb(57, 59, 57);
+}
+.search-bar-nav {
+  margin-left: 32%;
+  padding: 2rem;
+}
+.enter-nav:focus {
+  outline: none;
+}
+
+@media (max-width: 904px) {
+  .drop-list li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .enter-nav {
+    font-size: 15px;
+  }
+  .search-bar-nav {
+    margin-left: 25%;
+  }
+}
+@media (max-width: 560px) {
+  .drop-list li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .drop-list li {
+    font-size: 10px;
+  }
+}
+
 body,
 html {
   height: 100%;
@@ -136,7 +247,7 @@ i.fa.fa-search {
   .h4-footer {
     margin-right: 8em;
   }
-  input {
+  .enter {
     display: none;
   }
   .search-bar {
@@ -161,10 +272,6 @@ i.fa.fa-search {
   }
   .search-bar {
     margin-top: 50px;
-  }
-  .search-btn,
-  i.fa.fa-search {
-    font-size: 10px;
   }
 }
 /* Header */
