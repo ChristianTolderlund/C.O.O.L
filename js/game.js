@@ -79,9 +79,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "image/games/blank.png");
       cards[optionTwoId].setAttribute("src", "image/games/blank.png");
-      alert("You have clicked the same image!");
+      Swal.fire({
+        title: "Error!",
+        text: "You have clicked the same image!",
+        icon: "error",
+        confirmButtonText: "Cool",
+      });
     } else if (cardsChosen[0] === cardsChosen[1]) {
-      alert("You found a match");
+      Swal.fire({
+        title: "Nice!",
+        text: "You found a match!",
+        icon: "success",
+        confirmButtonText: "Keep going!",
+      });
+      //alert("You found a match");
       cards[optionOneId].setAttribute("src", "image/games/white.png");
       cards[optionTwoId].setAttribute("src", "image/games/white.png");
       cards[optionOneId].removeEventListener("click", flipCard);
@@ -90,13 +101,27 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       cards[optionOneId].setAttribute("src", "image/games/blank.png");
       cards[optionTwoId].setAttribute("src", "image/games/blank.png");
-      alert("Sorry, try again");
+      Swal.fire({
+        title: "Close!",
+        text: "You'll get it next try!",
+        icon: "error",
+        confirmButtonText: "Try again!",
+      });
+      //alert("Sorry, try again");
     }
     cardsChosen = [];
     cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) {
-      resultDisplay.textContent = "Congratulations! You found them all!";
+      Swal.fire({
+        title: "YOU WON!!!",
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
     }
   }
 
